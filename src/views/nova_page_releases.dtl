@@ -1,0 +1,19 @@
+{% include "header.dtl" with activePage="releases" %}
+
+<div class="features2 cases">
+    <div class="text-wrap">
+      <h1 class="heading-2 _2">Releases</h1>
+      <p class="paragraph-1 left">Release information</p>
+    </div>
+    <div class="wrap _2">
+      <div class="service-name">
+        <div class="semi-white-bg">
+          <h2>Latest release: {{ latest.tag_name }}</h2>
+          <p class="p-1">{{ latest.body }}</p>
+          <a href={{ latest.html_url }} class="btn2 w-button">Read at GitHub</a>
+        </div>
+      </div>
+     </div>
+  </div>
+
+{% include "footer.dtl" %}
