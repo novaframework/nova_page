@@ -3530,7 +3530,6 @@
   }
 
   .brand-4 {
-    display: block;
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
@@ -3552,6 +3551,7 @@
     -webkit-flex: 1;
     -ms-flex: 1;
     flex: 1;
+    max-width: 5em;
   }
 
   .logo-2 {

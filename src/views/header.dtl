@@ -25,7 +25,7 @@
   <div id="stars3"></div>
   <div data-collapse="medium" data-animation="default" data-duration="400" role="banner" class="navbar-5 w-nav">
     <a href="/" aria-current="page" class="brand-4 w-nav-brand w--current"><img src="/assets/images/logo.svg"
-        loading="lazy" height="30" alt="" class="image-20"></a>
+        loading="lazy" height="46" alt="" class="image-20"></a>
     <nav role="navigation" class="nav-menu w-nav-menu">
       <a href="/releases" class="btn1 nav w-nav-link">Releases</a>
       <a href="https://erlangforums.com/nova" class="btn1 nav w-nav-link">Forum</a>
