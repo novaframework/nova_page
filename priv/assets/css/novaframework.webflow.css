@@ -917,6 +917,15 @@
   -ms-flex: 0 auto;
   flex: 0 auto;
   text-align: left;
+  position: absolute;
+  top: 0;
+  right: 0;
+  /* margin-top: 20px; */
+  background-color: #4466;
+  width: 100%;
+  height: 4em;
+  border-top: 1px solid #FFF;
+  border-bottom: 1px solid #FFF;
 }
 
 .brand {
@@ -1162,7 +1171,6 @@
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex;
-  padding: 1.5% 5%;
   -webkit-box-pack: start;
   -webkit-justify-content: flex-start;
   -ms-flex-pack: start;
@@ -1171,8 +1179,8 @@
   -webkit-align-items: center;
   -ms-flex-align: center;
   align-items: center;
-  border-bottom: 0.5px solid #dfe0e2;
-  background-color: #1f1a39;
+  background-color: transparent;
+  padding: 1em !important;
 }
 
 .brand-4 {
@@ -1191,6 +1199,7 @@
   -webkit-flex: 1;
   -ms-flex: 1;
   flex: 1;
+  z-index: 999;
 }
 
 .brand-4.w--current {
@@ -1198,6 +1207,7 @@
   -ms-flex-item-align: center;
   -ms-grid-row-align: center;
   align-self: center;
+  margin-left: 1em;
 }
 
 .logo-2 {
@@ -1627,7 +1637,7 @@
 
 .btn1.nav {
   display: block;
-  width: 100px;
+  /* width: 100px; */
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
   -webkit-flex-direction: row;
@@ -1641,11 +1651,16 @@
   -ms-flex-item-align: auto;
   -ms-grid-row-align: auto;
   align-self: auto;
-  background-color: transparent;
+  background-color: #8447FF;
   color: #f5f6fa;
   font-size: 1em;
   line-height: 1em;
   text-align: center;
+  border: 1px solid;
+  height: 40px;
+  margin-top: 13px;
+  margin-left: 20px;
+  font-size: 1.2em;
 }
 
 .btn1.nav:hover {
@@ -5752,27 +5767,34 @@
   }
 
   .btn1.nav {
-    width: 100%;
-    margin-bottom: auto;
-    margin-left: auto;
-    padding-top: 2%;
-    padding-bottom: 2%;
+    display: block;
+    /* width: 100px; */
     -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
     -webkit-flex-direction: row;
     -ms-flex-direction: row;
     flex-direction: row;
-    -webkit-box-pack: end;
-    -webkit-justify-content: flex-end;
-    -ms-flex-pack: end;
-    justify-content: flex-end;
-    -webkit-box-align: stretch;
-    -webkit-align-items: stretch;
-    -ms-flex-align: stretch;
-    align-items: stretch;
-    border-bottom-style: solid;
-    border-bottom-color: #1f1a39;
-    background-color: #1f1a39;
+    -webkit-box-pack: center;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-self: auto;
+    -ms-flex-item-align: auto;
+    -ms-grid-row-align: auto;
+    align-self: auto;
+    background-color: transparent;
+    color: #f5f6fa;
+    font-size: 1em;
+    line-height: 1em;
+    text-align: center;
+    border: 1px solid black;
+    padding: 10px;
+    text-align: center;
+    border-radius: 10px;
+    margin-left: 10px;
+    height: 35px;
+    margin-top: 15px;
+    background-color: #8447ff;
   }
 
   .heading-3 {
