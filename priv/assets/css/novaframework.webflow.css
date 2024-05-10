@@ -5559,7 +5559,7 @@
   }
 
   .navbar-5 {
-    z-index: 1000;
+    z-index: 10000;
     padding-right: 4px;
     padding-left: 24px;
     border-bottom-width: 1px;
@@ -7048,7 +7048,7 @@
   }
 
   .navbar-5 {
-    z-index: 10;
+    z-index: 10000;
     clear: right;
     background-color: #1f1a39;
     background-clip: border-box;
