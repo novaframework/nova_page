@@ -923,9 +923,9 @@
   /* margin-top: 20px; */
   background-color: #4466;
   width: 100%;
-  height: 4em;
-  border-top: 1px solid #FFF;
+  padding-bottom: 10px;
   border-bottom: 1px solid #FFF;
+  background-color: #1f1a39;
 }
 
 .brand {
@@ -5483,11 +5483,6 @@
     background-color: #fafafa;
   }
 
-  .nav-menu {
-    border-top: 1px solid #dfe0e2;
-    background-color: #f5f6fa;
-  }
-
   .navbar {
     padding-right: 4px;
     padding-left: 24px;
@@ -6321,10 +6316,6 @@
     background-color: #fafafa;
   }
 
-  .nav-menu {
-    background-color: #1f1a39;
-  }
-
   .brand {
     padding-left: 0px;
   }
@@ -6927,9 +6918,6 @@
     -webkit-flex: 0 auto;
     -ms-flex: 0 auto;
     flex: 0 auto;
-    border-bottom: 1px solid #f5f6fa;
-    border-top-style: none;
-    background-color: #1f1a39;
     text-align: center;
   }
 
