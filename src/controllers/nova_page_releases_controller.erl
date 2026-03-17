@@ -11,11 +11,10 @@ releases(_) ->
 
 get_latest() ->
     Url = <<"https://api.github.com/repos/novaframework/nova/releases/latest">>,
-    case shttpc:get(Url, opts()) of
+    case jhn_shttpc:get(Url, opts()) of
         #{status := {200, _}, body := ReleaseBody} ->
-                json:decode(ReleaseBody, [maps])
+                json:decode(ReleaseBody)
     end.
-
 
 opts() ->
     #{headers => ?HEADERS,
