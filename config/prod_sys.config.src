@@ -6,7 +6,7 @@
            {logger,
             [{handler, default, logger_std_h,
               #{level => error,
-                config => #{file => "log/erlang.log"}}},
+                config => #{file => "log/erlang.log"}}}
             ]}
           ]},
  {nova, [
@@ -14,13 +14,9 @@
                                   port => 80
                                  }},
          {dev_mode, false},
-         {bootstrap_application, nova_page}, %% Bootstraps the application
-         %% Plugins is written on form {RequestType, Module, Options, Priority}
-         %% Priority is that the lowest number is executed first
+         {bootstrap_application, nova_page},
          {plugins, [
-                    {pre_http_request, nova_security_plugin, #{}, 0},
-                    {pre_ws_upgrade, nova_security_plugin, #{}, 0}
+                    {pre_request, nova_request_plugin, #{}}
                    ]}
         ]}
-  %% Please change your app.src-file instead if you intend to add app-specific configurations
 ].
